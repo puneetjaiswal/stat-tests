@@ -1,0 +1,2 @@
+manufacturer of fluoride toothpaste regularly measures the concentration of fluoride in the toothpaste to make sure that it is within the specification of 0.85 to 1.10 mg/g. The data file fluoride.txt has 100 such measurements.
+
