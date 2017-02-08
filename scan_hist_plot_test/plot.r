@@ -1,6 +1,13 @@
 fluo.conc = scan("/opt/Code/My/R-Tests/scan_hist_plot_test/Fluoride.txt")
 
+# mean
 mean(fluo.conc)
+
+# st. deviation
+sd(fluo.conc)
+
+# 5 - number summary
+summary(fluo.conc)
 
 # histogram with multiple options
 hist(fluo.conc)

@@ -1,0 +1,1 @@
+When you purchase “1-pound bags” of carrots, you can buy either “baby” carrots or regular carrots. We shall compare the weights of 75 bags of each of these types of carrots. The Babycarrots.txt and Regularcarrots.txt files give the weights of the bags of baby carrots and regular carrots. Compare the two types of carrots using box plots.
