@@ -1,0 +1,400 @@
+mu = 50
+sigma = 6
+x = seq(mu - 3 * sigma, mu + 3 * sigma, by = 1)
+plot (x, dnorm ( x, 50, 6), type="l", lty="dotted", col="red", ylim= c(0,0.5))
+plot (x, dnorm ( x, 50, 6), type="l", lty="dotted", col="red")
+plot (x, dnorm ( x, 50, 6), type="l", lty="dotted", col="red", ylim= c(0,0.5))
+sigma = 6mu = 50#
+sigma = 6#
+plot (x, dnorm ( x, 50, 6), type="l", lty="dotted", col="red")#
+#
+plot (x, dnorm ( x, 50, 6), type="l", lty="dotted", col="red", ylim= c(0,0.5))
+mu = 50#
+sigma = 6#
+plot (x, dnorm ( x, 50, 6), type="l", lty="dotted", col="red")#
+#
+plot (x, dnorm ( x, 50, 6), type="l", lty="dotted", col="red", ylim= c(0,0.5))
+mu=50
+sigma=6
+s = seq(mu-3*sigma, mu+3*sigma, by=0.5)
+x = seq(mu-3*sigma, mu+3*sigma, by=0.5)
+plot(x, dnorm(x,mu,sigma), type="l", lty="dotted",col="green", ylim=c(0,0.5))
+sigma1=2;
+x1=seq(mu-3*sigma1, mu+3*sigma1, by=0.1)
+plot(x1)
+plot(x1, dnorm(x1, mu, sigma1),)
+plot(x1, dnorm(x1, mu, sigma1), type=l)
+plot(x1, dnorm(x1, mu, sigma1), type="l")
+plot(x1, dnorm(x1, mu, sigma1), type="l", lty="dashed", col="blue" )
+mu = 50#
+sigma = 6#
+#
+plot (x, dnorm ( x, mu, sigma), type="l", lty="dotted", col="red", ylim= c(0,0.5))#
+sigma1=2#
+x1= seq(50-3*sigma1, 50+3*sigma1, by = 0.1)#
+lines(x1, dnorm(x1, mu, sigma1), type = "l", lty = "dashed", col = "blue")#
+sigma2=1#
+x2= seq(50-3*sigma2, 50+3*sigma2, by = 0.1)#
+lines(x1, dnorm(x2, mu, sigma2), type = "l", lty = "dashed", col = "black")
+mu = 50#
+sigma = 6#
+#
+plot (x, dnorm ( x, mu, sigma), type="l", lty="dotted", col="red", ylim= c(0,0.5))#
+sigma1=2#
+x1= seq(50-3*sigma1, 50+3*sigma1, by = 0.1)#
+lines(x1, dnorm(x1, mu, sigma1), type = "l", lty = "dashed", col = "blue")#
+sigma2=1#
+x2= seq(50-3*sigma2, 50+3*sigma2, by = 0.1)#
+lines(x2, dnorm(x2, mu, sigma2), type = "l", lty = "dashed", col = "black")
+scores = sample(60:100, 100, replace = TRUE)
+[1] 99 97 73 77 63 63 84 69 94 75 99 80 83 60 76 88 90 69#
+[19] 94 73 60 73 98 81 87 94 64 87 65 71 92 66 100 90 99 62#
+[37] 79 81 96 100 98 97 92 66 80 87 67 72 79 83 62 81 80 79#
+[55] 77 68 76 94 92 65 90 87 65 65 90 96 66 72 62 74 94 97#
+[73] 68 74 98 76 61 99 100 77 98 83 99 76 98 80 70 62 71 85#
+[91] 85 80 98 83 88 79 86 93 73 61
+mean(scores)
+scores = sample(60:100, 100, replace = TRUE)
+mean(scores)
+sd(scores)
+scores = sample(60:100, 100, replace = TRUE)
+mean(scores)
+sd(scores)
+hist(scores, probability = TRUE, col#
+= "orange")
+a=10#
+b=100#
+scores = sample(a:b, 100, replace = TRUE)#
+mean(scores)#
+sd(scores)#
+hist(scores, probability = TRUE, col= "orange")
+a=10#
+b=100#
+jump=10#
+scores = sample(a:b, jump, replace = TRUE)#
+mean(scores)#
+sd(scores)#
+hist(scores, probability = TRUE, col= "orange")
+a=60#
+b=100#
+jump=10#
+scores = sample(a:b, jump, replace = TRUE)#
+mean(scores)#
+sd(scores)#
+hist(scores, probability = TRUE, col= "orange")
+a=60#
+b=100#
+sampleSize=100#
+scores = sample(a:b, sampleSize, replace = TRUE)#
+mean(scores)#
+sd(scores)#
+hist(scores, probability = TRUE, col= "orange")
+a=60#
+b=100#
+sampleSize=100#
+scores = sample(a:b, sampleSize, replace = TRUE)#
+mean(scores)#
+sd(scores)#
+hist(scores, probability = TRUE, col= "orange")#
+#
+mean.sample=numeric(25) #create a vector to store the sample mean of the experiment, you can change the number 25 to 250, 2500 and so on#
+#
+for(i in 1:1000) #to repeat the experiment 1000 times.#
+{#
+x_bar.sample=sample(scores,25) #creating a random sample of size 25 fromthe scores#
+mean.sample[i]=mean(x_bar.sample) # we store the mean of this sample inmean.sample and we do this 1000 times#
+}#
+hist(mean.sample, probability = TRUE, col = "blue", main = "n = 25") #creatinga histogram for the x_bar samples#
+mean_xbar = mean(mean.sample)#
+sd_xbar=sd(mean.sample)#
+print(c(mean_xbar, sd_xbar))
+a=60#
+b=100#
+initialSize=100#
+scores = sample(a:b, initialSize, replace = TRUE)#
+mean(scores)#
+sd(scores)#
+#hist(scores, probability = TRUE, col= "orange")#
+#
+mean.sample=numeric(25) #create a vector to store the sample mean of the experiment, you can change the number 25 to 250, 2500 and so on#
+#
+for(i in 1:1000) #to repeat the experiment 1000 times.#
+{#
+x_bar.sample=sample(scores,5) #creating a random sample of size 25 from the scores#
+mean.sample[i]=mean(x_bar.sample) # we store the mean of this sample inmean.sample and we do this 1000 times#
+}#
+hist(mean.sample, probability = TRUE, col = "blue", main = "n = 25") #creatinga histogram for the x_bar samples#
+mean_xbar = mean(mean.sample)#
+sd_xbar=sd(mean.sample)#
+print(c(mean_xbar, sd_xbar))
+a=60#
+b=100#
+initialSize=100#
+scores = sample(a:b, initialSize, replace = TRUE)#
+mean(scores)#
+sd(scores)#
+#hist(scores, probability = TRUE, col= "orange")#
+#
+mean.sample=numeric(5) #create a vector to store the sample mean of the experiment, you can change the number 25 to 250, 2500 and so on#
+#
+for(i in 1:1000) #to repeat the experiment 1000 times.#
+{#
+x_bar.sample=sample(scores,5) #creating a random sample of size 25 from the scores#
+mean.sample[i]=mean(x_bar.sample) # we store the mean of this sample inmean.sample and we do this 1000 times#
+}#
+hist(mean.sample, probability = TRUE, col = "blue", main = "n = 25") #creatinga histogram for the x_bar samples#
+mean_xbar = mean(mean.sample)#
+sd_xbar=sd(mean.sample)#
+print(c(mean_xbar, sd_xbar))
+a=60#
+b=100#
+initialSize=100#
+scores = sample(a:b, initialSize, replace = TRUE)#
+mean(scores)#
+sd(scores)#
+hist(scores, probability = TRUE, col= "orange")
+mean.sample=numeric(5)
+for(i in 1:1000) #to repeat the experiment 1000 times.#
+{#
+x_bar.sample=sample(scores,5) #creating a random sample of size 25 from the scores#
+mean.sample[i]=mean(x_bar.sample) # we store the mean of this sample inmean.sample and we do this 1000 times#
+}#
+hist(mean.sample, probability = TRUE, col = "blue", main = "n = 25") #creatinga histogram for the x_bar samples#
+mean_xbar = mean(mean.sample)#
+sd_xbar=sd(mean.sample)#
+print(c(mean_xbar, sd_xbar))
+a=60#
+b=100#
+initialSize=100#
+scores = sample(a:b, initialSize, replace = TRUE)#
+mean(scores)#
+sd(scores)#
+hist(scores, probability = TRUE, col= "orange")#
+meanSampleSize = 5#
+#
+mean.sample=numeric(meanSampleSize) #create a vector to store the sample mean of the experiment, you can change the number 25 to 250, 2500 and so on#
+#
+for(i in 1:1000) #to repeat the experiment 1000 times.#
+{#
+x_bar.sample=sample(scores,meanSampleSize5) #creating a random sample of size 25 from the scores#
+mean.sample[i]=mean(x_bar.sample) # we store the mean of this sample inmean.sample and we do this 1000 times#
+}#
+hist(mean.sample, probability = TRUE, col = "blue", main = "n = " + meanSampleSize) #creatinga histogram for the x_bar samples#
+mean_xbar = mean(mean.sample)#
+sd_xbar=sd(mean.sample)#
+print(c(mean_xbar, sd_xbar))
+a=60#
+b=100#
+initialSize=100#
+scores = sample(a:b, initialSize, replace = TRUE)#
+mean(scores)#
+sd(scores)#
+hist(scores, probability = TRUE, col= "orange")#
+meanSampleSize = 5#
+#
+mean.sample=numeric(meanSampleSize) #create a vector to store the sample mean of the experiment, you can change the number 25 to 250, 2500 and so on#
+#
+for(i in 1:1000) #to repeat the experiment 1000 times.#
+{#
+x_bar.sample=sample(scores,meanSampleSize5) #creating a random sample of size 25 from the scores#
+mean.sample[i]=mean(x_bar.sample) # we store the mean of this sample inmean.sample and we do this 1000 times#
+}#
+hist(mean.sample, probability = TRUE, col = "blue", main = "n = " . meanSampleSize) #creatinga histogram for the x_bar samples#
+mean_xbar = mean(mean.sample)#
+sd_xbar=sd(mean.sample)#
+print(c(mean_xbar, sd_xbar))
+a=60#
+b=100#
+initialSize=100#
+scores = sample(a:b, initialSize, replace = TRUE)#
+mean(scores)#
+sd(scores)#
+hist(scores, probability = TRUE, col= "orange")#
+meanSampleSize = 5#
+#
+mean.sample=numeric(meanSampleSize) #create a vector to store the sample mean of the experiment, you can change the number 25 to 250, 2500 and so on#
+#
+for(i in 1:1000) #to repeat the experiment 1000 times.#
+{#
+x_bar.sample=sample(scores,meanSampleSize5) #creating a random sample of size 25 from the scores#
+mean.sample[i]=mean(x_bar.sample) # we store the mean of this sample inmean.sample and we do this 1000 times#
+}#
+hist(mean.sample, probability = TRUE, col = "blue", main = meanSampleSize) #creatinga histogram for the x_bar samples#
+mean_xbar = mean(mean.sample)#
+sd_xbar=sd(mean.sample)#
+print(c(mean_xbar, sd_xbar))
+meanSampleSize = 25#
+#
+mean.sample=numeric(meanSampleSize) #create a vector to store the sample mean of the experiment, you can change the number 25 to 250, 2500 and so on#
+#
+for(i in 1:1000) #to repeat the experiment 1000 times.#
+{#
+x_bar.sample=sample(scores,meanSampleSize5) #creating a random sample of size 25 from the scores#
+mean.sample[i]=mean(x_bar.sample) # we store the mean of this sample inmean.sample and we do this 1000 times#
+}#
+hist(mean.sample, probability = TRUE, col = "blue", main = meanSampleSize) #creatinga histogram for the x_bar samples#
+mean_xbar = mean(mean.sample)#
+sd_xbar=sd(mean.sample)#
+print(c(mean_xbar, sd_xbar))
+meanSampleSize = 25#
+#
+mean.sample=numeric(meanSampleSize) #create a vector to store the sample mean of the experiment, you can change the number 25 to 250, 2500 and so on#
+#
+for(i in 1:1000) #to repeat the experiment 1000 times.#
+{#
+x_bar.sample=sample(scores,meanSampleSize) #creating a random sample of size 25 from the scores#
+mean.sample[i]=mean(x_bar.sample) # we store the mean of this sample inmean.sample and we do this 1000 times#
+}#
+hist(mean.sample, probability = TRUE, col = "blue", main = meanSampleSize) #creatinga histogram for the x_bar samples#
+mean_xbar = mean(mean.sample)#
+sd_xbar=sd(mean.sample)#
+print(c(mean_xbar, sd_xbar))
+meanSampleSize = 5#
+#
+mean.sample=numeric(meanSampleSize) #create a vector to store the sample mean of the experiment, you can change the number 25 to 250, 2500 and so on#
+#
+for(i in 1:1000) #to repeat the experiment 1000 times.#
+{#
+x_bar.sample=sample(scores,meanSampleSize) #creating a random sample of size 25 from the scores#
+mean.sample[i]=mean(x_bar.sample) # we store the mean of this sample inmean.sample and we do this 1000 times#
+}#
+hist(mean.sample, probability = TRUE, col = "blue", main = meanSampleSize) #creatinga histogram for the x_bar samples#
+mean_xbar = mean(mean.sample)#
+sd_xbar=sd(mean.sample)#
+print(c(mean_xbar, sd_xbar))
+fluo.conc = scan("/opt/Code/My/R-Tests/scan_hist_plot_test/Fluoride.txt")
+hist(fluo.conc)
+mean(fluo.conc)
+std(fluo.conc)
+st_d(fluo.conc)
+sigma(fluo.conc)
+stem(fluo.conc)
+leaf(fluo.conc)
+boxplot(fluo.conc)
+boxplot(fluo.conc, main ="Box Plot for Fluoride Concentrations", ylab="Concentration mg/g")
+median(fluo.conc)
+max(fluo.conc)
+min(fluo.conc)
+count(fluo.conc)
+summary(fluo.conc)
+fluo.conc = scan("/opt/Code/My/R-Tests/scan_hist_plot_test/Fluoride.txt")#
+#
+# mean#
+mean(fluo.conc)
+sd(fluo.conc)
+summary(fluo.conc)
+hist(fluo.conc)
+stem(fluo.conc)
+boxplot(fluo.conc, main ="Box Plot for Fluoride Concentrations", ylab="Concentration mg/g")
+setwd("/opt/Code/My/R-Tests/test_data")
+automobile.data=scan("Rearview.txt")
+summary
+summary(automobile.data)
+hist(automobile.data, freq=10)
+hist(automobile.data, breaks=10)
+hist(automobile.data, breaks=10)
+hist(automobile.data, breaks=10)
+hist(automobile.data, breaks=10)
+hist(automobile.data, main="breaks=10")
+hist(automobile.data, main="breaks=20")
+hist(automobile.data, breaks=20)
+hist(automobile.data, breaks=10)
+hist(automobile.data, breaks=20)
+hist(automobile.data, breaks=2)
+hist(automobile.data, breaks=5)
+hist(automobile.data, breaks=10)
+histinfo <- hist(automobile.data, breaks=10)
+histinfo <- hist(automobile.data, breaks=10)
+histinfo$density
+lead.conc96 = scan("Lead1996.txt")
+mean(lead.conc96)
+sd (lead.conc96)
+lead.conc97 = scan("Lead1997.txt")
+mean(lead.conc97)
+sd (lead.conc97)
+boxplot(lead.conc96)
+boxplot(lead.conc96, lead.conc97, names=c("lead conc 96", "lead conc 97"), col=c("red", "blue"), main="Box Plot for Lead Conentration")
+exp(5)
+help
+help exp
+help function(exp)
+exp(5)
+expData = rexp(n=5000, rate=5)
+rexp(n=5000, rate=5)
+expData = rexp(n=5000, rate=5)
+set.seed(1)
+rexp(n=5000, rate=5)
+set.seed(1)
+expData = rexp(n=5000, rate=5)
+sampleSize = 40
+experiment.sample = sample(expData, sampleSize, replace=true)
+experiment.sample = sample(expData, sampleSize, replace=TRUE)
+sample(expData, sampleSize, replace=TRUE)
+sample(expData, sampleSize, replace=TRUE)
+experiment.sample = sample(expData, sampleSize, replace=TRUE)
+simulations = 1000
+mean(experiment.sample)
+(experiment.sample)sd
+sd(experiment.sample)
+for (i in simulations) {}
+for (i in simulations) {
+}
+hist(experiment.sample)
+sampleSize = 40
+simulations = 1000
+hist(expData)
+hist(expData)
+sampleSize = 40
+simulations = 1000
+sampleCollection = numeric(40000)
+for (i in simulations) {}
+sampleCollection = numeric(sampleSize * simulations)
+for (i in simulations) {}
+for (i in simulations) {
+sampleCollection[i] = 1
+}
+set.seed(1)
+theta = 5
+sampleSize = 40
+simulations = 1000
+sampleMeanCollection = numeric(1000)
+for(i in simulations) {
+sampleMeanCollection[i] = mean(rexp(n=sampleSize, rate=theta))
+}
+hist(sampleMeanCollection)
+simulatedExp = replicate(simulations, mean(rexp(sampleSize, theta)))
+hist(simulatedExp)
+sampleMeanCollection = numeric(1000)
+for(i in simulations) {
+sampleMeanCollection[i] = mean(rexp(sampleSize, theta))
+}
+hist(sampleMeanCollection)
+sampleMeanCollection = numeric(5)
+for(i in 1:simulations) {
+sampleMeanCollection[i] = mean(rexp(sampleSize, theta))#
+}
+hist(sampleMeanCollection)
+sampleMeanCollection = numeric(simulations)
+for(i in 1:simulations) {
+sampleMeanCollection[i] = mean(sample(expData, sampleSize))
+}
+hist(sampleMeanCollection)
+for(i in 1:simulations) {#
+sampleMeanCollection[i] = mean(sample(expData, sampleSize))#
+}#
+hist(sampleMeanCollection)
+mean (sampleMeanCollection)
+sd(sampleMeanCollection)
+sampleMeanCollection = numeric(simulations)
+for(i in 1:simulations) {
+sampleMeanCollection[i] = mean(sample(expData, sampleSize))
+}
+hist(sampleMeanCollection)
+mean (sampleMeanCollection)
+sampleMeanCollection = numeric(simulations)#
+for(i in 1:simulations) {
+sampleMeanCollection[i] = mean(rexp(sampleSize, theta))
+}
+hist(sampleMeanCollection)
+mean (sampleMeanCollection)
+sd (sampleMeanCollection)
