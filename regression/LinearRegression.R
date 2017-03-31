@@ -14,7 +14,7 @@ data("Galton")
 # parent = x, child = y
 plot(Galton$parent, Galton$child)
 
-# Running linear model regression
+# Running linear model regression, always pass y~x
 heights.lm = lm(child~parent, Galton)
 summary(heights.lm)
 
