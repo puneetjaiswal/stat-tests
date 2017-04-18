@@ -8,7 +8,7 @@ library(ggplot2)
 
 data("Galton")
 
-#View(Galton)
+View(Galton)
 #summary(Galton)
 
 # parent = x, child = y
