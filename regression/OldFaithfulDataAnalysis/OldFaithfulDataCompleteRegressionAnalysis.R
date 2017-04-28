@@ -81,4 +81,7 @@ anova (Reduced, Full) # Get Lack-of-Fit test
 
 # Box Cox 
 # Transforming either or both of Y,X to make fit into the model
-# boxcox(Y~ X, data = data_name, lambda = seq(startvalue, endvalue, length = 10))
+# install.packages("MASS")
+# boxcox(Y~X, data = data_name, lambda = seq(startvalue, endvalue, length = 10))
+
+
