@@ -9,8 +9,10 @@ abline(bplm)
 
 # predict for a given value of x, with a confidence interval
 newx<-list(volume=2000)
-predict(bplm, newdata=newx, interval="confidence",level=.95)
+bplm1 = lm(price~volume,backpacks)
+
+predict(bplm1, newdata=newx, interval="confidence",level=.95)
 
 #predict interval
-predict(bplm, newdata=newx, interval="predict",level=.95)
+predict(bplm1, newdata=newx, interval="predict",level=.95)
 
